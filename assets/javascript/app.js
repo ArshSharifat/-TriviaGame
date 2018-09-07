@@ -84,7 +84,7 @@ $(document).ready(function(){
        $('#timer').removeClass('last-seconds');
       $('#timer').text(trivia.timer);
       
-      // fix timer from going faster
+      // prevent timer from going faster
       if(!trivia.timerOn){
         trivia.timerId = setInterval(trivia.timerRunning, 1000);
       }
@@ -126,7 +126,7 @@ $(document).ready(function(){
           '<p>Correct: '+ trivia.correct +'</p>'+
           '<p>Incorrect: '+ trivia.incorrect +'</p>'+
           '<p>Unaswered: '+ trivia.unanswered +'</p>'+
-          '<p>Please play again!</p>');
+          '<p>Click start game to play again!</p>');
         
         // hide game sction
         $('#game').hide();
@@ -153,7 +153,7 @@ $(document).ready(function(){
         trivia.correct++;
         clearInterval(trivia.timerId);
         resultId = setTimeout(trivia.guessResult, 1000);
-        $('#results').html('<h3>Good Job!</h3>');
+        $('#results').html('<h3>Correct!</h3>');
       }
       // else the user picked the wrong option, increment incorrect
       else{
