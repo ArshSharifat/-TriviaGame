@@ -1,9 +1,9 @@
 # -TriviaGame
- TriviaGame homework JavaScript assignment 2 
- NBA themed questions:
- User has 15 seconds to answer each question
+ TriviaGame homework JavaScript assignment 2 <br>
+ NBA themed questions:<br>
+ User has 15 seconds to answer each question<br>
  
- Game:
+ Game:<br>
  https://arshsharifat.github.io/TriviaGame/
  
  
